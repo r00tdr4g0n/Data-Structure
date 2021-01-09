@@ -55,5 +55,16 @@ int main()
 		}
 	}
 
+	// 삭제후 남은 데이터 전체 출력
+	printf("현재 데이터의 수 : %d \n", LCount(&list));
+
+	if (LFirst(&list, &pPos)) {
+		ShowPointPos(pPos);
+
+		while (LNext(&list, &pPos)) {
+			ShowPointPos(pPos);
+		}
+	}
+
 	return 0;
 }
