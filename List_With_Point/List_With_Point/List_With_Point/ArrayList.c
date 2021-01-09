@@ -62,7 +62,7 @@ LData LRemove(List* plist) {
 	return rdata;
 }
 
-int LCount(List* plist) 
+int LCount(List* plist)
 {
 	return plist->numOfData;
 }
